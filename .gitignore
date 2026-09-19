@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Cache & Scratch
+.temp_cache/
+*.vtt
+*.srt
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
