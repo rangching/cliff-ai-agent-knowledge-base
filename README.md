@@ -1,7 +1,7 @@
 # YouTube AI Agent 影音知識庫自動化建構指南 (Agent SOP & Workflow Blueprint)
 
 > 本專案為 **YouTube 頻道影音知識庫自動化建構專案**。本份說明文件專為 **人類開發者** 與 **自主 AI Agent（如 Claude Code, OpenAI Codex, Google AntiGravity, OpenCode 等）** 設計。  
-> **任何 AI Agent 閱讀完本 Repo 後，均可完全自主遵循本指南的工作流程，重現、更新或為任何其他 YouTube 頻道建立同規格的本地結構化知識庫。**
+> **所有 Agent 必須先遵守 [AGENTS.md](AGENTS.md) 的角色、Writer Lock、branch／PR 與人工合併規則，再依此指南處理知識庫。**
 
 ---
 
@@ -10,7 +10,7 @@
 如果你是一個正在接手或維護此專案的 AI Agent，請嚴格遵循以下協議進行操作：
 
 1. **環境檢查**：確認執行環境中具備 Python 3.10+、`yt-dlp`（最新版）與 `ffmpeg`。若套件版本過舊，優先升級 `yt-dlp`。
-2. **網路存取**：抓取 YouTube 頻道 API 與字幕需具備網路連線權限（若在沙盒環境請啟用網路連線或 BypassSandbox）。
+2. **網路存取**：抓取 YouTube 頻道 API 與字幕需具備網路連線權限（若在沙盒環境請依工具權限流程取得必要網路權限，不得自行繞過安全限制）。
 3. **分層結構**：
    - 主索引檔統一為 `AI_Agent_影片清單.md`，必須按主題分類與集數（`EP01~`）由小到大排序。
    - 所有逐字稿統一儲存在 `字幕/<分類資料夾>/` 下，檔名需進行檔案系統特殊字元清理（`sanitize_filename`）。
@@ -134,3 +134,9 @@ ydl_opts = {
 ## 📄 授權與宣告 (License & Disclaimer)
 
 本專案程式碼與建構流程採 [MIT License](LICENSE) 開源授權。逐字稿與影片內容之著作權均屬原頻道創作者 [三師爸 @sensebar](https://www.youtube.com/@sensebar) 所有，本工具僅供教育研習、學術研究與個人 AI 輔助學習使用。
+
+## Multi-Agent Software Engineering Stack
+
+共用規範：[AGENTS.md](AGENTS.md)；角色與交接：[MULTI_AGENT_WORKFLOW](docs/MULTI_AGENT_WORKFLOW.md)；環境、CI 與 GitHub 設定：[DEVELOPMENT](docs/DEVELOPMENT.md)；架構：[ARCHITECTURE](docs/ARCHITECTURE.md)。
+
+正式修改一律 branch + PR，以 GitHub Actions 實際結果驗證，獨立 review 後由人類批准及合併。

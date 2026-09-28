@@ -1,0 +1,4 @@
+interface:
+  display_name: "可驗證測試"
+  short_description: "以 GitHub Issue 與 PR 證據完成可驗證測試，遵守角色與人工核准邊界"
+  default_prompt: "使用 $testing 處理目前 Issue，將結果記錄於 PR。"
