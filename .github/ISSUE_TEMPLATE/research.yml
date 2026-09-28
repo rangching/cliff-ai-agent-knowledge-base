@@ -1,0 +1,48 @@
+name: Research
+description: 提出技術查證需求
+title: '[Research] '
+labels:
+- task:research
+body:
+- type: textarea
+  id: field-0
+  attributes:
+    label: Research question
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-1
+  attributes:
+    label: Why needed
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-2
+  attributes:
+    label: Required sources
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-3
+  attributes:
+    label: Prototype needed?
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-4
+  attributes:
+    label: Deliverable
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-5
+  attributes:
+    label: Suggested Agent
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true

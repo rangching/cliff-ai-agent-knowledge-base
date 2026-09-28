@@ -1,0 +1,48 @@
+version: 1
+mode: advisory
+routes:
+  implementation:
+    primary: claude
+  feature:
+    primary: claude
+  large_refactor:
+    primary: claude
+  code_review:
+    primary: codex
+  debugging:
+    primary: codex
+  regression:
+    primary: codex
+  security_review:
+    primary: codex
+  google:
+    primary: antigravity
+  firebase:
+    primary: antigravity
+  gemini:
+    primary: antigravity
+  android:
+    primary: antigravity
+  research:
+    primary: antigravity
+  private:
+    primary: opencode
+  offline:
+    primary: opencode
+  local:
+    primary: opencode
+  low_cost:
+    primary: opencode
+governance:
+  max_writers_per_task: 1
+  max_writers_per_repository: 1
+  allow_direct_main_push: false
+  require_pull_request: true
+  require_independent_review: true
+  require_ci_pass: true
+  require_human_merge_approval: true
+precedence:
+- 'private/offline/local: human confirms data boundary before any cloud routing'
+- 'google research: antigravity research artifact, then claude implementation'
+- 'debugging: codex diagnosis, claude production fix'
+- 'otherwise: match task route; ambiguity goes to human'

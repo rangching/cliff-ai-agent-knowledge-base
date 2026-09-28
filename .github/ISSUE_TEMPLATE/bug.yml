@@ -1,0 +1,55 @@
+name: Bug
+description: 回報可重現問題
+title: '[Bug] '
+labels:
+- task:bug
+body:
+- type: textarea
+  id: field-0
+  attributes:
+    label: Observed behavior
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-1
+  attributes:
+    label: Expected behavior
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-2
+  attributes:
+    label: Reproduction steps
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-3
+  attributes:
+    label: Environment
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-4
+  attributes:
+    label: Logs
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-5
+  attributes:
+    label: Regression?
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-6
+  attributes:
+    label: Severity
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true

@@ -1,0 +1,62 @@
+name: Feature
+description: 提出功能需求
+title: '[Feature] '
+labels:
+- task:feature
+body:
+- type: textarea
+  id: field-0
+  attributes:
+    label: Problem
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-1
+  attributes:
+    label: Goal
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-2
+  attributes:
+    label: Scope
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-3
+  attributes:
+    label: Non-goals
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-4
+  attributes:
+    label: Acceptance Criteria
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-5
+  attributes:
+    label: Risk
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-6
+  attributes:
+    label: Suggested Agent
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
+- type: textarea
+  id: field-7
+  attributes:
+    label: Related Components
+    description: 請提供具體內容；無適用項目請說明原因，請勿貼上 secrets。
+  validations:
+    required: true
